@@ -105,7 +105,7 @@ function Home() {
                                 'button button--warning button--lg',
                                 styles.getStarted,
                             )}
-                            to={useBaseUrl('quick-guides/quick-guide-git')}>
+                            to={useBaseUrl('docs/quick-guides/quick-guide-git')}>
                             Ver Documentación
                         </Link>
                     </div>

@@ -1,9 +1,9 @@
 ---
 id: quick-guide-semver
 title: Semantic Versioning
-sidebar_label: SEMVER – Guía rápida3
+sidebar_label: SEMVER – Guía rápida
 ---
-![test](/personal-docusaurus/img/semver.jpg)
+![test](/personal-docusaurus/img/docs/semver.jpg)
 
 El versionamiento semántico es un convenio o estándar a la hora de definir la versión de tu código, dependiendo de la naturaleza del cambio que estás introduciendo. De tal forma, se identifican 3 tipos de cambios:
 
