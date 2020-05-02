@@ -1,11 +1,11 @@
 module.exports = {
   title: 'PROYECTO PERSONAL',
   tagline: 'Conocimientos adquiridos',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://vgrados2.github.io/personal-docusaurus/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'vgrados2', // Usually your GitHub org/user name.
+  projectName: 'personal-docusaurus',
   themeConfig: {
     algolia: {
       apiKey: 'api-key',
