@@ -4,6 +4,11 @@
  * and scoped locally.
  */
 
+.heroTitle {
+  font-family: 'Galada', serif;
+  color: white;
+  line-height: 0;
+}
 .heroBanner {
   padding: 4rem 0;
   text-align: center;

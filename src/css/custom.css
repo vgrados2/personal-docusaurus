@@ -5,6 +5,7 @@
  * work well for content-centric websites.
  */
 
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #00a94f;
@@ -17,14 +18,16 @@
   --ifm-code-font-size: 95%;
 }
 /* If you have a different syntax highlighting theme for dark mode. */
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: red !important;
-}
-.docusaurus-highlight-code-line {
-  background-color: red !important;
-}
+/*html[data-theme='dark'] .docusaurus-highlight-code-line {*/
+/*  background-color: red !important;*/
+/*}*/
+/*.docusaurus-highlight-code-line {*/
+/*  background-color: red !important;*/
+/*}*/
 .codeBlockLines_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   background-color: #1c1e21  !important;
 }
-
+.codeBlockLines {
+  background-color: red !important;
+}
 
