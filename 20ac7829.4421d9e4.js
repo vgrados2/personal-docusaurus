@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{108:function(o){o.exports=JSON.parse('{"docsSidebars":{"docs":[{"type":"category","label":"Comandos","items":[{"type":"link","label":"Comandos GIT","href":"/docs/commands/command-git"}]}]},"permalinkToSidebar":{"/docs/commands/command-git":"docs"}}')}}]);
