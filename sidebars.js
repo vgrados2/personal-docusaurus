@@ -1,5 +1,5 @@
 module.exports = {
-    docs: {
-        'Comandos': ['commands/command-git'],
-    },
+    someSidebar: {
+        Comandos: ['doc1', 'doc2', 'doc3'],
+    }
 };
