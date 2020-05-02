@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{113:function(o){o.exports=JSON.parse('{"permalink":"https://vgrados2.github.io/personal-docusaurus/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null}')}}]);
