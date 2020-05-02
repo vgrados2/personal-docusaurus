@@ -1,15 +1,24 @@
 ---
-id: quick-guide-npm
-title: NPM – Guía rápida
-sidebar_label: NPM – Guía rápida
+id: quick-guide-semver
+title: Semantic Versioning
+sidebar_label: SEMVER – Guía rápida3
 ---
-![alt zonas de git](https://codigoonclick.com/wp-content/uploads/2019/05/npm-nodejs.jpeg)
+![test](/personal-docusaurus/img/semver.jpg)
 
-Inicializar proyecto
--------
+El versionamiento semántico es un convenio o estándar a la hora de definir la versión de tu código, dependiendo de la naturaleza del cambio que estás introduciendo. De tal forma, se identifican 3 tipos de cambios:
+
+- **Major:** Cambio drástico en el software. No es compatible con código hecho en versiones anteriores.
+- **Minor:** Cambio que añade alguna característica nueva al software o modifica alguna ya existente, pero que sigue siendo compatible con código existente. También cuando marcamos algo como obsoleto.
+- **Patch:** Cuando arreglamos un bug siendo el cambio retrocompatible.
+
+| Símbolo    | Dependencia | Versiones | Cambios                                                                                                                |
+| ---------  | ----------  | --------  | ---------------------------------------------------------------------------------------------------------------------- |
+| caret (^)  | ^3.9.2      | 3.\*.\*     | - backwards compatible <br/> - new functionality <br/> - old functionality deprecated, but operational <br/> -large internal refactor bug fix |
+| tilde (~)  | ~3.9.2      | 3.9.\*    | bug fix                                                                                                                |
+
 ```bash
 $ npm -v #ver version de npm 
-$ npm update -g npm #para actualizacion de npm
+$ npm update -g npm #para actualización de npm
 $ npm init #crear un nuevo proyecto
 $ npm init -y #si a todas las opciones
 ```
@@ -22,87 +31,3 @@ Instalación de paquetes
 $ npm install -global bootstrap 
 $ npm i -g bootstrap #Forma reducida
 ```
-### Instalacion de paquetes de manera local
-
-- **dependencies:** El paquete aparecerá en tu `dependencies`. Este es el valor predeterminado a menos que `-D`o `-O`estén presentes.
-```bash
-$ npm install bootstrap --save-prod
-$ npm i bootstrap -P #Forma reducida
-```
-- **devDependencies:** El paquete aparecerá en tu `devDependencies`.
-```bash
-$ npm install bootstrap --save-dev
-$ npm i bootstrap -D #Forma reducida
-```
-- **optionalDependencies:** El paquete aparecerá en tu `optionalDependencies`.
-```bash
-$ npm install bootstrap --save-optional
-$ npm i bootstrap -O #Forma reducida
-```
-- **perDependencies:** Usabo normalmente para librerias, se agrega la lista de paquetes manualmente, esta 
-lista debe estar instalada en aquel que use este modulo.
-
-```json
-{
-  "peerDependencies": {
-    "@angular/common": "^7.2.0"
-  }
-}
-
-```
-
-### Instalacion de paquetes version especifica
-```bash
-$ npm install bootstrap@lastest #instalar la ultima version (por defecto)
-$ npm install bootstrap@next #actualice a la versión más reciente
-$ npm install bootstrap@0.1.0 #instalar version especifica
-$ npm install bootstrap@">=0.1.0 <0.2.0"
-```
-### Eliminar paquete de forma global
-```bash
-$ npm rm -g [nombreDelPaquete]
-$ npm uninstall -g [nombreDelPaquete]
-```
-
-### Eliminar paquete local
-```bash
-$ npm rm [nombreDelPaquete]
-$ npm uninstall [nombreDelPaquete]
-```
-### Actualizacion de paquetes
-```bash
-$ npm outdated #lista los paquetes desactualizados
-$ npm update #Actualizacion de todos los paquetes
-$ npm update [nombreDelPaquete]
-```
-Registry
--------
-```bash
-npm get registry #Consultar donde esta registrado actualmente
-npm set registry https://registry.npmjs.org/ #Setear registry de NPM
-npm set proxy http://proxy.yourproxydomain.com  #Setear registry privado
-```
-
-Problemas clásicos
--------
-
-### Reparar la cache de npm
-```bash
-$ npm cache verify
-```
-### Limpiar la cache de npm forzadamente
-```bash
-$ npm cache clean --force
-```
-### npm ERR! code EINTEGRITY
-```bash
-$ #Reinstalar el modulo correspondiente
-```
-Mantenimiento de npm
--------
-### Libreria para actualizacion de paquetes
-```bash
-$ npm i -g npm-check-updates
-$ ncu
-```
-

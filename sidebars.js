@@ -1,6 +1,10 @@
 module.exports = {
     someSidebar: {
-        Docusaurus: ['doc1', 'doc2', 'doc3'],
-        Comandos: ['commands/command-git']
+        'Guías Rápidas': [
+            'quick-guides/quick-guide-git',
+            'quick-guides/quick-guide-npm',
+            'quick-guides/quick-guide-semver'
+        ],
+        Docusaurus: ['doc1'],
     }
 };

@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Victor Grados',
-    tagline: 'Front-end Developer',
+    tagline: 'FrontEnd Developer',
     url: 'https://vgrados2.github.io/personal-docusaurus/',
     baseUrl: '/personal-docusaurus/',
     favicon: 'img/favicon.ico',
@@ -8,25 +8,24 @@ module.exports = {
     projectName: 'personal-docusaurus',
     themeConfig: {
         algolia: {
-            apiKey: 'api-key',
-            indexName: 'index-name',
-            appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
-            algoliaOptions: {}, // Optional, if provided by Algolia
+            apiKey: '3385b405855fe0135ae7cffc442936b5',
+            indexName: 'vgrados2',
+            // appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+            // algoliaOptions: {}, // Optional, if provided by Algolia
         },
         navbar: {
             title: 'Inicio',
             logo: {
-                alt: 'My Site Logo',
+                alt: '#vgrados',
                 src: 'img/logo.svg',
             },
             links: [
                 {
-                    to: 'docs/doc1',
+                    to: '/docs/quick-guides/quick-guide-git',
                     activeBasePath: 'docs',
                     label: 'Docs',
                     position: 'left',
                 },
-                {to: 'blog', label: 'Blog', position: 'left'},
                 {
                     href: 'https://github.com/vgrados2/personal-docusaurus',
                     label: 'GitHub',
@@ -41,22 +40,18 @@ module.exports = {
                     title: 'Docs',
                     items: [
                         {
-                            label: 'Style Guide',
-                            to: 'docs/doc1',
+                            label: 'Guiás rápidas',
+                            to: '/docs/quick-guides/quick-guide-git',
                         },
                         {
-                            label: 'Second Doc',
-                            to: 'docs/doc2',
+                            label: 'Guiá de estilos',
+                            to: 'docs/doc1',
                         },
                     ],
                 },
                 {
-                    title: 'Community',
+                    title: 'Comunidad Docusaurus',
                     items: [
-                        {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
                         {
                             label: 'Discord',
                             href: 'https://discordapp.com/invite/docusaurus',
@@ -68,12 +63,12 @@ module.exports = {
                     ],
                 },
                 {
-                    title: 'More',
+                    title: 'Extras',
                     items: [
-                        {
-                            label: 'Blog',
-                            to: 'blog',
-                        },
+                        // {
+                        //     label: 'Blog',
+                        //     to: 'blog',
+                        // },
                         {
                             label: 'GitHub',
                             href: 'https://github.com/vgrados2/personal-docusaurus',
@@ -81,7 +76,7 @@ module.exports = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} Documentacion, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} <b>Victor Grados</b>, Inc. Built with Docusaurus.`,
         },
     },
     presets: [
