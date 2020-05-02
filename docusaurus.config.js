@@ -2,7 +2,7 @@ module.exports = {
   title: 'PROYECTO PERSONAL',
   tagline: 'Conocimientos adquiridos',
   url: 'https://vgrados2.github.io/personal-docusaurus/',
-  baseUrl: '/',
+  baseUrl: '/personal-docusaurus/',
   favicon: 'img/favicon.ico',
   organizationName: 'vgrados2', // Usually your GitHub org/user name.
   projectName: 'personal-docusaurus',
