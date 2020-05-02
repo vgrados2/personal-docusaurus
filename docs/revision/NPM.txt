@@ -1,0 +1,14 @@
+LIMIAR LA CACHE DE NPM
+
+npm cache clean --force
+
+ACTUALIZAR NPM 
+npm i -g npm to update
+
+
+PARA ERRORES
+rm -rf node_modules
+rm package-lock.json
+rm -rf ~/.npm
+
+npm install --update-binary --no-shrinkwrap

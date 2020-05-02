@@ -1,0 +1,88 @@
+﻿sha512-/WaKcZn3WZPB9VvKVBqN0cQvjM0Na0/QHQL/rpdUq8sA0ZYJtGzM81BeA12XpjSgMx6+wkiMG7WNSjQ2w+iQfA
+sha512-3V9WoeBML+GlgQM77NmPFh6bZT3kf+rShKOx8ML6Z1Oh8ho1DaRPdXOc8jUALeACPcBuz1D39yAppf35CrcZYg==
+npm i -g npm
+npm cache verify
+npm cache --force clean
+npm install --update-binary --no-shrinkwrap
+C: \ Users \ user-name \ AppData \ Roaming
+---
+npm cache clear --force && npm install --no-shrinkwrap --update-binary
+npm config set package-lock false
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Esto funcionó para mí:
+npm cache verify
+
+Luego volví a ejecutar:
+npm install -g create-react-app
+
+Y se instaló como se esperaba: problema resuelto
+
+Algunas otras soluciones mencionadas son:
+
+npm cache clean --force
+
+O
+
+Eliminar las carpetas npm y npm-cache en Users%username%\AppData\Roaming(Windows 7) y ejecutarnpm install
+
+O
+
+Actualiza npm por via npm i -g npm
+
+O
+
+Borrar package-lock.json
+
+O
+
+npm cache verify
+
+O
+
+npm cache clean
+
+O
+
+siga estos pasos para solucionar el problema:
+
+encuentre todos los paquetes obsoletos y actualice el tema:
+npm outdated -g
+sudo npm i -g outDatedPKG
+actualice npm a la última versión con:
+sudo npm i -g npm
+borrar package-lock.jsonarchivo
+eliminar _cacachedirectorio en ~/.npm: npm cache verify
+cada vez que aparece ese error, haz los pasos 2 y 3.
+si aún obtiene el error, borre la caché de npm:
+npm cache clean --force
+O
+
+agregar proxy .npmrcen el ~directorio:
+proxy=http://localhost:8123
+https-proxy=http://localhost:8123
+
+¡Inténtalo de nuevo! la conexión lenta a Internet y la censura pueden causar este feo problema.
+
+
+
+
+
+O
+
+npm cache clear --force && npm install --no-shrinkwrap --update-binary
+
+O
+
+npm config set package-lock false
+
+
+-------------------
+
+npm uninstall -g @angular/cli
+npm uninstall --save-dev @angular/cli
+npm install -g @angular/cli@1.6.0
+
+rmdir /s node_modules
+npm install --save-dev @angular/cli@1.6.0
+npm install

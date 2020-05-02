@@ -1,0 +1,16 @@
+Después de leer algunos problemas informados en el repositorio de GitHub, encontré la solución.
+
+Para actualizar el paquete angular-cli instalado globalmente en su sistema, debe ejecutar:
+
+npm uninstall -g angular-cli
+npm cache clean or npm cache verify (if npm > 5)
+npm install -g @angular/cli@latest
+Dependiendo de su sistema, es posible que tenga que prefijar los comandos anteriores sudo.
+
+Además, lo más probable es que también quiera actualizar su versión de proyecto local, porque dentro del directorio de su proyecto se seleccionará con mayor prioridad que la global:
+
+rm -rf node_modules
+npm uninstall --save-dev angular-cli
+npm install --save-dev @angular/cli@latest
+npm install
+gracias grizzm0 por señalar esto en GitHub .
