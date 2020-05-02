@@ -1,7 +1,7 @@
 ---
 id: command-git
 title: Git / Comandos Básicos
-sidebar_label: Comandos GIT
+sidebar_label: Guía de GIT
 ---
 Config
 -------
