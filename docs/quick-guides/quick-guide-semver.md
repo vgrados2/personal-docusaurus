@@ -15,19 +15,3 @@ El versionamiento semántico es un convenio o estándar a la hora de definir la 
 | ---------  | ----------  | --------  | ---------------------------------------------------------------------------------------------------------------------- |
 | caret (^)  | ^3.9.2      | 3.\*.\*     | - backwards compatible <br/> - new functionality <br/> - old functionality deprecated, but operational <br/> -large internal refactor bug fix |
 | tilde (~)  | ~3.9.2      | 3.9.\*    | bug fix                                                                                                                |
-
-```bash
-$ npm -v #ver version de npm 
-$ npm update -g npm #para actualización de npm
-$ npm init #crear un nuevo proyecto
-$ npm init -y #si a todas las opciones
-```
-
-Instalación de paquetes
--------
-### Instalacion de paquetes de manera global
-
-```bash
-$ npm install -global bootstrap 
-$ npm i -g bootstrap #Forma reducida
-```
