@@ -5,6 +5,6 @@ module.exports = {
             'quick-guides/quick-guide-npm',
             'quick-guides/quick-guide-semver'
         ],
-        Docusaurus: ['doc1', 'initial-setup'],
+        Docusaurus: ['initial-setup', 'doc1']
     }
 };
