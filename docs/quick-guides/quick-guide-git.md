@@ -17,12 +17,11 @@ Inicializar repositorio
 -------
 
 ```bash
-$ git init
-$ git add .                           # Marca todos los ficheros para el próximo commit.
-$ git add index.html                  # Marcar un fichero en especifico
-$ git commit -am "Mensaje"            # add y commit
-$ git status                          # Estaod actual del repositorio
+$ git init                            # Iniciar un nuevo proyecto de git (.git)
+$ git status                          # Estado actual del repositorio
+$ git add .                           # Marca todos los ficheros para el próximo commit. 
 $ git commit -m "Commit inicial"      # Crea un nuevo commit con los ficheros marcados.
+$ git commit -am "Commit inicial"     # add y commit
 ```
 Manejo de Ramas en Git
 -------
@@ -73,12 +72,11 @@ Manejo de Tags de git
 -------
 ### tags
 ```bash
-$ git tag                              # Mostrar lista de tags
-$ git tag -n                           # Mostrar lista y descripción
-$ git tag -d <nombre>                  # Eliminar Tag
-$ git tag -a <nombre>                  # Crear Tag no firmado
+$ git tag                              # Lista los tags locales mas -n para descripcion
+$ git ls-remote --tags                 # Listar los tags remotos
+$ git tag -d <nombre>                  # Eliminar Tag Local
+$ git push -d origin <nombre>          # Eliminar Tag Remoto
 $ git push --tags                      # Subir Tags al repositorio remoto
-$ git push origin :refs/tags/<nombre>  # Eliminar Tag remoto borrado localmente
 ```
 
 
@@ -87,9 +85,11 @@ Guardar cambios actuales para recuperarlos después
 
 ```bash
 $ git stash                    # Guarda cambios hechos desde el ultimo commit
+$ git stash save "descrip"     # Guarda cambios hechos desde el ultimo commit
 $ git stash pop                # Recupera los cambios guardados
 $ git stash list               # Lista los estados guardados
 $ git stash apply              # Aplica cambios guardados sin borrarlos de la lista
+$ git stash clear              # Para limpiar todo el stash
 ```
 
 Configuraciones
@@ -109,8 +109,8 @@ git config user.email "name@domain.com"
 ```
 ### Configurar repositorios remotos
 ```bash
-git remote -v #ver ramas remotas
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambiar url remota
-git remote add origin https://github.com/user/repo.git    #Setear una nueva url remota
-git remote rm $name #Eliminar url remota
+git remote -v                                                         #ver ramas remotas
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git  #Cambiar url remota
+git remote add origin https://github.com/user/repo.git                #Setear una nueva url remota
+git remote rm $name                                                   #Eliminar url remota
 ```
