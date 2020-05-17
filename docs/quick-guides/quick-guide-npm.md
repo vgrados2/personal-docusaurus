@@ -106,3 +106,16 @@ $ npm i -g npm-check-updates
 $ ncu
 ```
 
+### Para desinstalar paquetes globalmente
+```bash
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean` 
+npm install -g @angular/cli@latest
+# verision anterior 
+npm install -g @angular/cli@7.3.8
+```
+
+
+
+
