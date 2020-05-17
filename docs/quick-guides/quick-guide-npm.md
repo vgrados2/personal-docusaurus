@@ -98,6 +98,15 @@ $ npm cache clean --force
 ```bash
 $ #Reinstalar el modulo correspondiente
 ```
+### problemas con sass
+```bash
+# verificar que la version de node sass sea la correcta
+npm install node-sass --force
+# and then I had to do
+npm rebuild node-sass --force
+```
+
+
 Mantenimiento de npm
 -------
 ### Libreria para actualizacion de paquetes
