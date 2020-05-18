@@ -98,6 +98,15 @@ $ npm cache clean --force
 ```bash
 $ #Reinstalar el modulo correspondiente
 ```
+### problemas con sass
+```bash
+# verificar que la version de node sass sea la correcta
+npm install node-sass --force
+# and then I had to do
+npm rebuild node-sass --force
+```
+
+
 Mantenimiento de npm
 -------
 ### Libreria para actualizacion de paquetes
@@ -105,4 +114,17 @@ Mantenimiento de npm
 $ npm i -g npm-check-updates
 $ ncu
 ```
+
+### Para desinstalar paquetes globalmente
+```bash
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean` 
+npm install -g @angular/cli@latest
+# verision anterior 
+npm install -g @angular/cli@7.3.8
+```
+
+
+
 
