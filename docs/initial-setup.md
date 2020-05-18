@@ -17,21 +17,21 @@ sidebar_label: Configuración inicial
 # my-website: Nombre del proyecto
 # classic: Tema que usaras en el proyecto
 
-$ npx @docusaurus/init@next init my-website classic
+npx @docusaurus/init@next init my-website classic
 ```
 
 #### Ubíquense en el directorio del proyecto e instale las dependencias:
 
 ```bash
-$ npm install
+npm install
 ```
 #### Ejecutando el servidor de desarrollo
 ```bash
-$ npm start
+npm start
 ```
 #### Para general el compilado del proyecto
 ```bash
-$ npm run build
+npm run build
 ```
 #### _Para mayor información puede consultar en la documentación de_ <a href="http://docusaurus-2.netlify.com/docs/installation" target="_blank">Docusaurus</a>
 
@@ -59,7 +59,7 @@ para obtener la `url` publica de github pages debe ingresar a las configuracione
 luego debe ejecutar lo siguiente, esto creara una rama gh-pages con el compilado de su proyecto, en `GIT_USER` debe ingresar su usuario de git.
 
 ```bash
-$ GIT_USER=vgrados2 CURRENT_BRANCH=source USE_SSH=false npm run deploy
+GIT_USER=vgrados2 CURRENT_BRANCH=source USE_SSH=false npm run deploy
 ```
 
 > una ves que se subieron sus cambios de manera correcta debera ingresar nuevamente a la configuración del repositorio y configurar la rama gh-pages como principal
@@ -87,7 +87,7 @@ brindándole una `apiKey` y un `indexName` los cuales le permitirán hacer funci
 
 #### Una ves configurado inicialice el servidor de desarrollo
 ```bash
-$ npm start
+npm start
 ```
 
 > Nota: Si el buscador no funciona es por que aún puede estar en proceso el pull request esto puede tardar hasta 24horas. en mi caso tarde un par de horas.

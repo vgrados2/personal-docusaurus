@@ -11,7 +11,7 @@ sidebar_label: Lerna – Guía rápida
 
 Esta herramienta realmente ayuda cuando se trata con versiones semánticas, configurando el flujo de trabajo de construcción, empujando sus paquetes, etc. La idea principal detrás de Lerna es que su proyecto tiene una carpeta de paquetes, que contiene todas sus partes de código aisladas. Y además de los paquetes, tiene una aplicación principal, que por ejemplo puede vivir en la carpeta src. Casi todas las operaciones en Lerna funcionan a través de una regla simple: itera a través de todos sus paquetes y realiza algunas acciones sobre ellos, por ejemplo, aumentar la versión del paquete, actualizar la dependencia de todos los paquetes, construir todos los paquetes, etc.
 
-#### Configurar Lerna
+### Configurar Lerna
 
 Lerna es una herramienta CLI (interfaz de línea de comandos), por lo que la instalo globalmente.
 
@@ -20,7 +20,7 @@ npm i lerna -g
 npm lerna --help  #Para visualizar los comandos
 ```
 
-##### Opciones
+#### Opciones
 
 por defecto se encuentra configurado con `Fixed/Locked` este mantendra la misma version en todos los modulos
 
@@ -57,7 +57,7 @@ si quiere que cada uno de estos modulos mantenga una version independiente deber
 
 `npmClient`: una opción para especificar un cliente específico para ejecutar comandos (esto también se puede especificar por comando). Cambie a `"yarn"`para ejecutar todos los comandos con hilo. El valor predeterminado es "npm".
 
-#### Comandos
+## Comandos
 
 Cree un nuevo repositorio de lerna o actualice un repositorio existente a la versión actual de Lerna.
 
@@ -69,7 +69,7 @@ lerna run    #Para ejecutar un script de cada paquete (npm run start)
 
 tener en cuenta que lerna no tomara los modulos que esten marcados como `private: true` en el package.son
 
-#### lerna version
+### lerna version
 
 ```bash
 lerna version 1.0.1 # explicit
@@ -96,7 +96,7 @@ Para utilizar `lerna version` tenemos 2 opciones
 
 - **from-package**: Este comando inspecciona cada uno de los `package.json`  y verifica si una de las versiones no esta presente en el registry. Cualquier versión que no esté presente en el registro será publicada. Esto es útil cuando un anterior `lerna publish`no pudo publicar todos los paquetes en el registro.
 
-##### Opciones
+#### Opciones
 
 - ###### --allow-branch
 
@@ -143,7 +143,7 @@ Para utilizar `lerna version` tenemos 2 opciones
   # omite la confirmacion
   ```
 
-#### lerna publish
+### lerna publish
 
 ```
 lerna publish               # publique paquetes que han cambiado desde la última versión 
@@ -153,13 +153,13 @@ lerna publish fron-package # Publique explícitamente paquetes donde la última 
 
 > `lerna publish`admite todas las opciones proporcionadas [`lerna version`](https://github.com/lerna/lerna/tree/master/commands/version#options)además de lo siguiente:
 
-##### Opciones
+#### Opciones
 
-- ###### --contents <dir>
+- ###### --contents dir
 
   ```bash
   lerna publish --contents dist
-  # publica la subcarpeta "dist" de cada paquete hoja administrado por Lerna (debe ser configurado en cada paquete)
+  #publica la subcarpeta "dist" de cada paquete hoja administrado por Lerna (debe ser configurado en cada paquete)
   ```
 
 - ###### --legacy-auth
@@ -184,16 +184,18 @@ lerna publish fron-package # Publique explícitamente paquetes donde la última 
 
   > Por favor, use con precaución
 
-- ###### --registry <url>
+- ###### --registry url
 
 Cuando se ejecuta con este indicador, los comandos npm reenviados utilizarán el registro especificado para su (s) paquete (s).
 
 Esto es útil si no desea configurar explícitamente la configuración de su registro en todos sus archivos package.json individualmente, por ejemplo, cuando usa registros privados.
 
 ```json
+{
   "publishConfig": {
     "registry": "http://my-awesome-registry.com/"
   }
+}
 ```
 
 - ###### --tag-version-prefix
@@ -206,7 +208,7 @@ Esto es útil si no desea configurar explícitamente la configuración de su reg
 }
 ```
 
-#### Scripts de ciclo de vida lerna
+### Scripts de ciclo de vida lerna
 
 ```bash
 #preversion: Ejecutar ANTES de encontrar la versión del paquete. 
