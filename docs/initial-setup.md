@@ -56,12 +56,15 @@ para obtener la `url` publica de github pages debe ingresar a las configuracione
 
 ![github-pages](/personal-docusaurus/img/docs/github-pages.png)
 
-luego debe copiar lo siguiente y ejecutarlo en su terminal, esto creara una rama gh-pages con el compilado de su proyecto, en `GIT_USER` debe ingresar su usuario de git.
+luego agregue al package.json en la sección de scripts lo siguiente
 
 ```bash
-GIT_USER=vgrados2 CURRENT_BRANCH=source USE_SSH=false npm run deploy
+ "build-deploy": "set GIT_USER=vgrados2&& npm run deploy"
 ```
-TODO: crear un script para que ejecute estos comandos desde los scripts de npm, ya que no pude ejecutarlos
+debe ingresar su usuario, **no dejar espacio en blanco entre el usuario y el &&**, ya que genera un error.
+
+para finalizar, ejecute `npm run build-deploy`,  esto creara una rama gh-pages con el compilado de su proyecto.
+
 > una ves que se subieron sus cambios de manera correcta debera ingresar nuevamente a la configuración del repositorio y configurar la rama gh-pages como principal
 y listo. ingrese a la url publica.
 

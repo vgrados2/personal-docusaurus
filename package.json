@@ -7,8 +7,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "test2": "env GIT_USER=vgrados2 && env CURRENT_BRANCH=source && env USE_SSH=false && npm run deploy",
-    "test3": "cmd /C \"set GIT_USER=vgrados2&& npm run deploy"
+    "build-deploy": "set GIT_USER=vgrados2&& npm run deploy"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.54",
