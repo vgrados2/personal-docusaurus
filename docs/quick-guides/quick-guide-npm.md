@@ -125,6 +125,10 @@ npm install -g @angular/cli@latest
 npm install -g @angular/cli@7.3.8
 ```
 
+https://semver.npmjs.com/
+https://github.com/npm/node-semver#prerelease-tags
+https://docs.npmjs.com/cli/v7/configuring-npm/package-json
+
 
 
 
